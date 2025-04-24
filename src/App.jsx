@@ -1,11 +1,18 @@
 import React from 'react'
 import './App.css'
+import Home from './components/home.jsx'
+import Sidebar from './components/sidebar.jsx'
+import Navbar from './components/navbar.jsx'
 
 const App = () => {
   return (
-    <div className='flex'>
-      <div className="flex-1/5 bg-black m-10 h-100"></div>
-      <div className="flex-1/5 bg bg-black h-100"></div>
+    <div className="App flex">
+      <Sidebar />
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    
     </div>
   )
 }

@@ -10,6 +10,7 @@ body{
   background-color: #f0f0f0;
 }
 
-.bg {
-  background-color: #f0f0f0;
+.App {
+  background: linear-gradient(to right, #9016d6, #aa3d9c);   
+
 }

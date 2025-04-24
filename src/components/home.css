@@ -1,0 +1,12 @@
+.bg{
+    background: linear-gradient(to right, #9016d6, #aa3d9c);   
+}
+
+.bg- {
+    /* background: linear-gradient(to right, #9016d6, #aa3d9c);    */
+    background-color: #9016d6;
+}
+
+.shadow {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
