@@ -32,9 +32,9 @@
 }
 
 .list {
-    color: black;
+    color:black;
 }
 
 .list:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
