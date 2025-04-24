@@ -4,7 +4,7 @@ import './home.css'
 
 const home = () => {
   return (
-    <div className='m-50 h-50 bg-amber-300'>
+    <div className='ml-[20vw] mt-auto w-[75vw] h-50 rounded-3xl bg-amber-300'>
      
     </div>
   )

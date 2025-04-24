@@ -1,8 +1,9 @@
 import React from 'react'
 import './App.css'
-import Home from './components/home.jsx'
+import Home from './components/total.jsx'
 import Sidebar from './components/sidebar.jsx'
 import Navbar from './components/navbar.jsx'
+import Expense from './components/expense.jsx'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Sidebar />
       <div>
         <Navbar />
+        <Expense />
         <Home />
       </div>
     
