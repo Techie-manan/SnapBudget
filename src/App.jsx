@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar.jsx'
 import Navbar from './components/navbar.jsx'
 import Expense from './components/expense.jsx'
 import Analysis from './components/analysis.jsx'
+import Savings from './components/savings.jsx'
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
         <Expense />
         <Home />
         <Analysis />
+        <Savings />
       </div>
-
     </div>
   )
 }

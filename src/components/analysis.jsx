@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { ResponsivePie } from "@nivo/pie";
+import { div } from "motion/react-client";
 
 export default () => (
-  <div className="h-80">
+  <div className="justify-center m-10">
+<h1 className="m-10 mt-30 font-extrabold text-4xl justify-self-center">Expense Analysis</h1>
+  <div className="h-[90vh] opacity-90">
     <ResponsivePie
       data={[
         { id: "Cats", value: 55, color: "#6366f1" },
@@ -16,5 +19,6 @@ export default () => (
       cornerRadius={3}
       colors={{ datum: "data.color" }}
     />
+  </div>
   </div>
 );
