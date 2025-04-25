@@ -38,3 +38,10 @@
 .list:hover {
     transform: scale(1.05);
 }
+
+.total {
+    background-color: #fff;
+    opacity: 0.3;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+
+}
