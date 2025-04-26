@@ -1,18 +1,22 @@
 import React from 'react'
 import '@flaticon/flaticon-uicons/css/all/all.css';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-const onInvestClick = () => {
-    <Link to="/invest" className=""></Link>
-}
 
 function Sidebar({ scrollToDExp, scrollToTotal, scrollToAnalysis, scrollToSavings }) {
+   
+    const navigate = useNavigate();
+
+    const onInvestClick = () => {
+        navigate('/invest');
+    }
+
     const buttons = [
         { label: 'Daily Expense', icon: 'fi fi-rr-receipt', onClick: scrollToDExp },
         { label: 'Total', icon: 'fi fi-rr-dollar', onClick: scrollToTotal },
         { label: 'Analysis', icon: 'fi fi-rr-chart-pie-alt', onClick: scrollToAnalysis },
         { label: 'Savings', icon: 'fi fi-rr-piggy-bank', onClick: scrollToSavings },
-        { label: 'Invest', icon: 'fi fi-br-growth-chart-invest', onClick: scrollToSavings },
+        { label: 'Invest', icon: 'fi fi-br-growth-chart-invest', onClick: onInvestClick },
         { label: 'Logout', icon: 'fi fi-br-power', onClick: () => alert('Logout clicked') },
     ];
 

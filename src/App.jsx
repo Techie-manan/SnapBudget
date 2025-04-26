@@ -27,7 +27,7 @@ function App() {
           scrollToAnalysis={() => refAnalysis.current?.scrollIntoView({ behavior: 'smooth' })}
           scrollToSavings={() => refSavings.current?.scrollIntoView({ behavior: 'smooth' })}
         />
-        <div className="flex-1">
+        <div className="flex-1 w-[85vw] ">
           <Navbar />
           <Routes>
             <Route

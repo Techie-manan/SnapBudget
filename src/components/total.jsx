@@ -15,10 +15,10 @@ const Total = forwardRef((props, ref) => {
     setYear('year');
   }
   return (
-    <div ref={ref} >
+    <div ref={ref} className='justify-items-center m-10 w-[85vw] ml-[15vw]'>
       <h1 className="text m-10 mt-30 font-extrabold text-4xl justify-self-center">Total Expense</h1>
 
-      <div className='total p-0 ml-[20vw] mt-auto w-[65vw] h-100 justify-self-center rounded-3xl relative bg-black/70'>
+      <div className='total p-0 mt-auto w-[65vw] h-100 justify-self-center rounded-3xl relative bg-black/70'>
         <div className='rounded-3xl flex flex-col items-center justify-items-center bg-black h-100 w-[20vw] right-0 absolute '>
           <h1 className='text-3xl mt-20 font-bold text-white'>Your Savings!!</h1>
           <h1 className='text-4xl my-5 font-bold text-red-600'>Savings</h1>
@@ -26,13 +26,19 @@ const Total = forwardRef((props, ref) => {
         </div>
         <div className='m-5 p-10'>
           <div className='toggle relative flex w-[20vw] items-center px-3 bg-black/70 h-15 font-bold rounded-b-3xl'>
-            <div onClick={monthClick} className="absolute right-0 w-[11vw] h-15 items-center flex justify-center bg-amber-500 rounded-b-3xl cursor-pointer">
+
+          <div
+            className={`absolute top-0 h-15 w-[10vw] bg-amber-500 rounded-b-3xl transition-all duration-350 shadow-xl`}
+            style={{ left: year ? '0' : '50%' }}
+          />
+
+            <div onClick={monthClick} className="absolute right-0 w-[11vw] h-15 items-center flex justify-center rounded-b-3xl cursor-pointer">
               Monthly </div>
             <div onClick={yearClick} className="absolute left-0 w-[11vw] h-15 flex justify-center items-center rounded-b-3xl cursor-pointer">
               Yearly </div>
           </div>
           {!year ? (
-            <ul className='w-3/5 h-full my-5 text-2xl font-bold mx-5 rounded-3xl'>
+            <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl'>
               <li className='flex justify-between my-2 list'>
                 <div>Week 1</div>
                 <div>345/-</div>
@@ -57,7 +63,7 @@ const Total = forwardRef((props, ref) => {
               <li className='absolute right-82 list'>7357/-</li>
             </ul>
           ) : (
-            <ul className='w-3/5 h-full my-5 text-2xl font-bold mx-5 rounded-3xl'>
+            <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl'>
               <li className='flex justify-between my-2 list'>
                 <div>January</div>
                 <div>950/-</div>
