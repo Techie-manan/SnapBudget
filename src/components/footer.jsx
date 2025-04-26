@@ -11,7 +11,7 @@ const footer = () => {
       <i class="fi fi-brands-whatsapp ibg"></i>
       </div>
       <div>
-        <input type="text" placeholder='Write To Us..' className='w-lg px-4 h-10 bg-gray-300 rounded-full'/>
+        <input type="text" placeholder='Write To Us..' className='w-lg px-4 h-10 flex bg-gray-300 rounded-full'/>
       </div>
       <div className='flex gap-5'>
       <i class="fi fi-brands-github ibg"></i>

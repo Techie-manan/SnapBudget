@@ -1,14 +1,19 @@
 import React, { forwardRef } from 'react'
+import { Link } from "react-router-dom";
 // import 'home.css'
 import './home.css'
 import { div } from 'motion/react-client'
-
+ 
 const Total = forwardRef((props, ref) => (
   <div ref={ref} >
     <h1 className="text m-10 mt-30 font-extrabold text-4xl justify-self-center">Total Expense</h1>
 
     <div className='total p-0 ml-[20vw] mt-auto w-[65vw] h-100 justify-self-center rounded-3xl relative bg-black/70'>
-      <div className='rounded-3xl bg-amber-700/80 h-100 w-[20vw] right-0 absolute '></div>
+      <div className='rounded-3xl flex flex-col items-center justify-items-center bg-black h-100 w-[20vw] right-0 absolute '>
+      <h1 className='text-3xl mt-20 font-bold text-white'>Your Savings!!</h1>
+      <h1 className='text-4xl my-5 font-bold text-red-600'>Savings</h1>
+      <Link to="/invest"  className='h-12 px-5 py-5 my-5 rounded-full w-35 bg-black text-white flex items-center justify-center bg-amber-500'>Invest Now!!</Link>
+      </div>
       <div className='m-5 p-10'>
         <div className='toggle relative flex w-[20vw] items-center px-3 bg-black/70 h-15 font-bold rounded-b-3xl'>
           <div className="absolute right-0 w-[11vw] h-15 items-center  bg-amber-500 rounded-b-3xl">
