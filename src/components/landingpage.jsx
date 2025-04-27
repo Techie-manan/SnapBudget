@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
-const addsnap = () => {
+const landingpage = () => {
   return (
     <div className=" bg-home h-screen w-full p-0 m-0 overflow-hidden">
 
@@ -28,7 +29,7 @@ const addsnap = () => {
               y: [0, -50, 0],
             }}
             transition={{
-              delay:1,
+              delay: 1,
               duration: 2,
               ease: "easeInOut"
             }}
@@ -43,13 +44,15 @@ const addsnap = () => {
             transition={{
               delay: 2,
               duration: 2,
-            
               ease: "easeInOut"
             }}
           />
 
-          <button className=''>Add Expense</button>
+          <Link to='/addexpenseform' className='w-3xs rounded-bl-2xl rounded-tr-2xl flex justify-center items-center h-10 bg-amber-900 font-bold btn'>Add Expense</Link>
         </div>
+        {/* //Add expense- form */}
+       
+
         {/* SVG at the bottom */}
         <div className="absolute -bottom-15 w-full bg-wave h-[40%] opacity-99 z-0">
 
@@ -59,4 +62,4 @@ const addsnap = () => {
   )
 }
 
-export default addsnap
+export default landingpage

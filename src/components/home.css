@@ -101,3 +101,21 @@
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
 } 
+
+.btn {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 40px 80px 120px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #9016d6, #aa3d9c);
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

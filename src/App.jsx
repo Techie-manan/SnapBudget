@@ -11,7 +11,8 @@ import Footer from './components/footer.jsx'
 import About from './components/about.jsx'
 import Contact from './components/contact.jsx'
 import Invest from './components/invest.jsx'
-import Addsnap from './components/addsnap.jsx';
+import Addsnap from './components/landingpage.jsx';
+import Addform from './components/addform.jsx';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/invest" element={<Invest />} />
+            <Route path="/addexpenseform" element={<Addform />} />
           </Routes>
           <Footer />
         </div>
