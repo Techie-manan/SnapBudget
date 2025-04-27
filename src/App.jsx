@@ -11,6 +11,8 @@ import Footer from './components/footer.jsx'
 import About from './components/about.jsx'
 import Contact from './components/contact.jsx'
 import Invest from './components/invest.jsx'
+import Addsnap from './components/addsnap.jsx';
+
 
 function App() {
   const refDExp = useRef(null);
@@ -20,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App flex">
+      <div className="App relative flex">
         <Sidebar
           scrollToDExp={() => refDExp.current?.scrollIntoView({ behavior: 'smooth' })}
           scrollToTotal={() => refTotal.current?.scrollIntoView({ behavior: 'smooth' })}
@@ -34,6 +36,9 @@ function App() {
               path="/"
               element={
                 <>
+
+                  <Addsnap />
+               
                   <Expense ref={refDExp} />
                   <Total ref={refTotal} />
                   <Analysis ref={refAnalysis} />
