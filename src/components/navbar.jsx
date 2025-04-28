@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const navbar = () => {
     return (
-        <div>
+        <div className='navfade'>
             <div className='shadow w-[75vw] px-5 h-[13vh] z-10 flex justify-between items-center fixed rounded-b-3xl ml-[20vw] bg-black/70'>
                 <div className='flex items-center ml-10'>
                     <img src="src\assets\logo_bgR.PNG" alt="logo:)"

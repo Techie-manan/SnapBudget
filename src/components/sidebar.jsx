@@ -22,7 +22,7 @@ function Sidebar({ scrollToDExp, scrollToTotal, scrollToAnalysis, scrollToSaving
 
     return (
 
-        <div className="shadow w-[15vw] fixed bg-black/70  h-120 rounded-br-2xl z-10">
+        <div className="expbtn shadow w-[15vw] fixed bg-black/70  h-120 rounded-br-2xl z-10">
             <div className='ml-5 mt-10'>
                 <div className="flex gap-2 items-center mt-5 text-white text-xl font-bold">
                     <img src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=" alt="User"

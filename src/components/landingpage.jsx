@@ -9,56 +9,27 @@ const landingpage = () => {
       {/* Content can go here if you have any */}
       <div className="relative h-full w-full">
 
-        <div className='flex gap-5 justify-center items-center h-full'>
-          <motion.img
-            src='src\assets\triangle.png' alt=''
-            animate={{
-              rotate: [0, 360],
-              y: [0, -50, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-            }}
-          />
+        <div className='flex flex-col gap-5 justify-center items-center h-full'>
 
-          <motion.img
-            src='src\assets\circle.png' alt=''
-            animate={{
-              rotate: [0, 360],
-              y: [0, -50, 0],
-            }}
-            transition={{
-              delay: 0.5,
-              duration: 1.5,
-              ease: "easeInOut",
-            }}
-          />
+          <Link to='/addexpenseform' className='expbtn w-3xs rounded-bl-2xl mr-40 rounded-tr-2xl flex justify-center items-center h-12 bg-gray-400 font-bold btn transition'>Add Expense</Link>
 
-          <motion.img
-            src='src\assets\square.png' alt=''
-            animate={{
-              rotate: [0, 360],
-              y: [0, -50, 0],
-            }}
-            transition={{
-              delay: 1,
-              duration: 1.5,
-              ease: "easeInOut",
-            }}
-          />
+          <div className="flex  gap-1 orline">
+            <div className='list bg-gray-700 h-1 w-[5vw] justify-self-center rounded-full mt-3 mb-5'></div>
+            <h2 className='font-bold text-lg'>OR</h2>
+            <div className='list bg-gray-700 h-1 w-[5vw] justify-self-center rounded-full mt-3 mb-5'></div>
+          </div>
 
-          <Link to='/addexpenseform' className='w-3xs rounded-bl-2xl rounded-tr-2xl flex justify-center items-center h-10 bg-amber-700 font-bold btn'>Add Expense</Link>
+          <input type='number' placeholder='Add Monthly Budget' className="bdgtbtn no-arrows text-center text-black w-3xs rounded-br-2xl ml-40 rounded-tl-2xl flex justify-center items-center h-12 bg-gray-500 font-bold btn"/>
         </div>
         {/* //Add expense- form */}
-       
+
 
         {/* SVG at the bottom */}
-        <div className="absolute -bottom-15 w-full bg-wave h-[40%] opacity-99 z-0">
+        <div className="absolute -bottom-15 w-full orline bg-wave h-[40%] opacity-99 z-0">
 
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
