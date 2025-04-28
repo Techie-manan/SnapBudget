@@ -13,9 +13,9 @@ const addform = () => {
                         <div className='list bg-gray-700 h-1 w-[20vw] justify-self-center rounded-full mt-3 mb-5'></div>
                     </div>
                     <div className='flex flex-col gap-5 mt-5'>
-                        <input type="text" placeholder='Expense Name' className='w-3xs text-center rounded-full h-10 bg-amber-100 font-bold btn' />
-                        <input type="number" placeholder='Amount' className='centre text-center px-2 w-3xs rounded-full h-10 bg-amber-100 font-bold btn' />
-                        <input type="date" placeholder='Date' className='centre w-3xs rounded-full h-10 bg-amber-100 font-bold btn' />
+                        <input type="text" placeholder='Item Name' className='w-3xs text-center rounded-full h-10 bg-gray-200 hover:bg-amber-100 font-bold' />
+                        <input type="number" placeholder='Amount' className='centre text-center px-2 w-3xs rounded-full h-10 bg-gray-200 hover:bg-amber-100 font-bold ' />
+                        <input type="date" placeholder='Date' className='centre w-3xs rounded-full h-10 bg-gray-200 hover:bg-amber-100 font-bold' />
                         <button className='w-3xs rounded-full h-10 bg-amber-900 font-bold btn'>Add</button>
                     </div>
                 </div>

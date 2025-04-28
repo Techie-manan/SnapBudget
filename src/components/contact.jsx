@@ -3,7 +3,7 @@ import '@flaticon/flaticon-uicons/css/all/all.css';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-5 py-10 text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-500 to-black px-5 py-10 text-white">
 
       {/* Heading */}
       <h1 className="text-5xl font-bold mt-20 mb-10 text-center">

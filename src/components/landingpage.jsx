@@ -19,8 +19,6 @@ const landingpage = () => {
             transition={{
               duration: 1.5,
               ease: "easeInOut",
-              repeat:2,
-              repeatType: "loop",
             }}
           />
 
@@ -34,8 +32,6 @@ const landingpage = () => {
               delay: 0.5,
               duration: 1.5,
               ease: "easeInOut",
-              repeat:2,
-              repeatType: "loop",
             }}
           />
 
@@ -49,12 +45,10 @@ const landingpage = () => {
               delay: 1,
               duration: 1.5,
               ease: "easeInOut",
-              repeat:2,
-              repeatType: "loop",
             }}
           />
 
-          <Link to='/addexpenseform' className='w-3xs rounded-bl-2xl rounded-tr-2xl flex justify-center items-center h-10 bg-amber-900 font-bold btn'>Add Expense</Link>
+          <Link to='/addexpenseform' className='w-3xs rounded-bl-2xl rounded-tr-2xl flex justify-center items-center h-10 bg-amber-700 font-bold btn'>Add Expense</Link>
         </div>
         {/* //Add expense- form */}
        

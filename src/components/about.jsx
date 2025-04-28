@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="min-h-fit bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center px-5 py-10">
+    <div className="min-h-fit bg-gradient-to-br from-black via-gray-500 to-black text-white flex flex-col items-center px-5 py-10">
 
       {/* Heading */}
       <h1 className="text-5xl font-bold mt-24 mb-8 text-center">
