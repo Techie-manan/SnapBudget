@@ -89,7 +89,7 @@
 }
 
 .bg-home {
-    background-image: url('src/assets/bg-home.jpg');
+    background-image: url('src/assets/bghome.jpg');
   background-size: cover; /* Makes image cover the whole box */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;

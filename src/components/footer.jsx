@@ -20,7 +20,7 @@ const Footer = () => {
           <input 
             type="text" 
             placeholder="Write To Us.." 
-            className="px-6 py-3 rounded-full bg-gray-300 w-80 text-black placeholder:text-gray-600 focus:outline-none text-lg"
+            className="px-6 text-center py-3 rounded-full bg-gray-300 w-80 text-black placeholder:text-gray-600 focus:outline-none text-lg"
           />
         </div>
 

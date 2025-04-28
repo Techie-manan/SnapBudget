@@ -17,8 +17,10 @@ const landingpage = () => {
               y: [0, -50, 0],
             }}
             transition={{
-              duration: 2,
-              ease: "easeInOut"
+              duration: 1.5,
+              ease: "easeInOut",
+              repeat:2,
+              repeatType: "loop",
             }}
           />
 
@@ -29,9 +31,11 @@ const landingpage = () => {
               y: [0, -50, 0],
             }}
             transition={{
-              delay: 1,
-              duration: 2,
-              ease: "easeInOut"
+              delay: 0.5,
+              duration: 1.5,
+              ease: "easeInOut",
+              repeat:2,
+              repeatType: "loop",
             }}
           />
 
@@ -42,9 +46,11 @@ const landingpage = () => {
               y: [0, -50, 0],
             }}
             transition={{
-              delay: 2,
-              duration: 2,
-              ease: "easeInOut"
+              delay: 1,
+              duration: 1.5,
+              ease: "easeInOut",
+              repeat:2,
+              repeatType: "loop",
             }}
           />
 
