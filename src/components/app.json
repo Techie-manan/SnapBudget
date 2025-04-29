@@ -1,0 +1,26 @@
+[
+    {
+        "date": "2025-04-28",
+        "item": "Notebook",
+        "price": 5.99,
+        "total": 11.98
+    },
+    {
+        "date": "2025-04-29",
+        "item": "Pen",
+        "price": 1.49,
+        "total": 2.98
+    },
+    {
+        "date": "2025-04-30",
+        "item": "Backpack",
+        "price": 29.99,
+        "total": 29.99
+    },
+    {
+        "date": "2025-04-31",
+        "item": "Water Bottle",
+        "price": 9.99,
+        "total": 19.98
+    }
+]

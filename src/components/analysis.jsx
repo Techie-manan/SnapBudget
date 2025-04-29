@@ -1,9 +1,14 @@
 import React, { forwardRef } from "react";
+import { useState } from "react";
 import { ResponsivePie } from "@nivo/pie";
 
-const Sidebar = forwardRef((props, ref) => (
+const Sidebar = forwardRef((props, ref) => {
+  const [cards, setCards] = useState([]);
+
+
+
   <div ref={ref} className="justify-center m-10 w-[85vw] ml-[15vw]">
-    <h1 className= "text m-10 mt-30 font-extrabold text-4xl justify-self-center">Expense Analysis</h1>
+    <h1 className="text m-10 mt-30 font-extrabold text-4xl justify-self-center">Expense Analysis</h1>
     <div className="h-[90vh] opacity-90">
       <ResponsivePie
         data={[
@@ -19,6 +24,6 @@ const Sidebar = forwardRef((props, ref) => (
       />
     </div>
   </div>
-));
 
+});
 export default Sidebar;
