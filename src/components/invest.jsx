@@ -37,7 +37,7 @@ const CryptoBlogPage = () => {
     <div className="min-h-screen ml-[22vw] w-[70vw] text-white px-8 py-10">
       <header className="text-center mb-12 mt-22">
         <h1 className="text-5xl font-bold mb-4 text-amber-400">Crypto Insights</h1>
-        <p className="text-gray-400 text-lg">Stay updated with the latest crypto blogs and pro tips!</p>
+        <p className="text-black text-lg">Stay updated with the latest crypto blogs and pro tips!</p>
       </header>
 
       <section className="mb-16 p-5 text-center">
@@ -60,7 +60,7 @@ const CryptoBlogPage = () => {
         <h2 className="text-3xl font-bold mb-6 text-amber-300">Crypto Tips</h2>
         <ul className="list-none pl-5 space-y-4">
           {tips.map((tip, index) => (
-            <li key={index} className="text-gray-300">{tip}</li>
+            <li key={index} className="text-gray-700 font-semibold">{tip}</li>
           ))}
         </ul>
       </section>

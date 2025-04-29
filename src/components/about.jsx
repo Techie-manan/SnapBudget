@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="min-h-fit bg-gradient-to-br from-black via-gray-500 to-black text-white flex flex-col items-center px-5 py-10">
+    <div className="min-h-fit bg-home text-white flex flex-col items-center px-5 py-10">
 
       {/* Heading */}
       <h1 className="text-5xl font-bold mt-24 mb-8 text-center">
@@ -10,7 +10,7 @@ const About = () => {
       </h1>
 
       {/* Short Description */}
-      <p className="text-lg text-gray-400 max-w-3xl text-center mb-16">
+      <p className="text-lg text-gray-700 max-w-3xl text-center mb-16">
         Welcome to our platform! We are passionate about helping you manage your finances easily and smartly. 
         Our mission is to provide simple, yet powerful tools to make budgeting effortless for everyone.
       </p>

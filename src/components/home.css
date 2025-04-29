@@ -61,7 +61,7 @@
 }
 
 .text {
-    background: linear-gradient(to right, #dad60e, #e7cbbb, #dad60e);
+    background: linear-gradient(to right,  #f5f103);
     /* cyan-500 to blue-500 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -95,8 +95,8 @@
 }
 
 .bg-home {
-    background: linear-gradient(to bottom right, black, #D1D5DB, black);
-    /* background-color: #9016d6; */
+  background: linear-gradient(to bottom right,#aa3d9c,#e7cbbb, #9016d6 );
+  /* background-color: #9016d6; */
     /* background-image: url('src/assets/bg_home.jpg'); */
     /* background-size: cover; Makes image cover the whole box */
     /* background-position: center; Centers the image */
@@ -111,7 +111,7 @@
 } */
 
 .bg-wave {
-    background-image: url('src/assets/image.png');
+    background-image: url('src/assets/image copy.png');
     background-size: cover;
     /* Makes image cover the whole box */
     background-position: center;
@@ -128,7 +128,7 @@
 .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom right, black, #D1D5DB, black);
+    background: linear-gradient(to right, #dad60e, #e7cbbb, #dad60e);
 }
 
 .centre {
