@@ -11,13 +11,17 @@ function Sidebar({ scrollToDExp, scrollToTotal, scrollToAnalysis, scrollToSaving
         navigate('/invest');
     }
 
+    const onLogClick = () => {
+        navigate('/login');
+    }
+
     const buttons = [
         { label: 'Daily Expense', icon: 'fi fi-rr-receipt', onClick: scrollToDExp },
         { label: 'Total', icon: 'fi fi-rr-dollar', onClick: scrollToTotal },
         { label: 'Analysis', icon: 'fi fi-rr-chart-pie-alt', onClick: scrollToAnalysis },
         { label: 'Savings', icon: 'fi fi-rr-piggy-bank', onClick: scrollToSavings },
         { label: 'Invest', icon: 'fi fi-br-growth-chart-invest', onClick: onInvestClick },
-        { label: 'Logout', icon: 'fi fi-br-power', onClick: () => alert('Logout clicked') },
+        { label: 'Logout', icon: 'fi fi-br-power', onClick: onLogClick },
     ];
 
     return (

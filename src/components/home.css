@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* .bg {
-    background: linear-gradient(to right, #9016d6, #aa3d9c);
+.bg {
+    background: linear-gradient(to bottom right, #9016d6,#e7cbbb, #aa3d9c);
 }
-
+/*
 .bg- {
     /* background: linear-gradient(to right, #9016d6, #aa3d9c);    */
 /* background-color: #9016d6;
@@ -15,13 +15,19 @@
 
 .card {
     background-color: #fff;
-    opacity: 0.5;
+    opacity: 0.8;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
 }
 
+.login {
+  background-color: #fff;
+  opacity: 0.8;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
 .btns {
     font-size: large;
     margin-top: 5px;

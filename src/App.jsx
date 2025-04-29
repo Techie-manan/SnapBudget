@@ -13,6 +13,7 @@ import Contact from './components/contact.jsx'
 import Invest from './components/invest.jsx'
 import Addsnap from './components/landingpage.jsx';
 import Addform from './components/addform.jsx';
+import Login from './components/login.jsx';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <Router>
+     
       <div className="App relative flex">
         <Sidebar
           scrollToDExp={() => refDExp.current?.scrollIntoView({ behavior: 'smooth' })}
@@ -37,14 +39,11 @@ function App() {
               path="/"
               element={
                 <>
-
                   <Addsnap />
-               
                   <Expense ref={refDExp} />
                   <Total ref={refTotal} />
                   <Analysis ref={refAnalysis} />
                   <Savings ref={refSavings} />
-
                 </>
               }
             />
@@ -52,6 +51,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/invest" element={<Invest />} />
             <Route path="/addexpenseform" element={<Addform />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
         </div>

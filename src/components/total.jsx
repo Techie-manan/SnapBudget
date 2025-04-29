@@ -27,10 +27,10 @@ const Total = forwardRef((props, ref) => {
         <div className='m-5 p-10'>
           <div className='toggle relative flex w-[20vw] items-center px-3 bg-black h-15 font-bold rounded-b-3xl'>
 
-          <div
-            className={`absolute top-0 h-15 w-[10vw] bg-amber-800 rounded-b-3xl transition-all duration-350 shadow-xl`}
-            style={{ left: year ? '0' : '50%' }}
-          />
+            <div
+              className={`absolute top-0 h-15 w-[10vw] bg-amber-800 rounded-b-3xl transition-all duration-350 shadow-xl`}
+              style={{ left: year ? '0' : '50%' }}
+            />
 
             <div onClick={monthClick} className="absolute text-white right-0 w-[11vw] h-15 items-center flex justify-center rounded-b-3xl cursor-pointer">
               Monthly </div>
