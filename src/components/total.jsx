@@ -1,5 +1,6 @@
 import React, { forwardRef, useState } from 'react'
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 // import 'home.css'
 import './home.css'
 
@@ -14,6 +15,20 @@ const Total = forwardRef((props, ref) => {
   const yearClick = () => {
     setYear('year');
   }
+
+  const [cards, setCards] = useState([]);
+
+  const fetchData = async () => {
+    let a = await fetch("src/components/app.json")
+    let data = await a.json()
+    setCards(data)
+    console.log(data)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
   return (
     <div ref={ref} className='justify-items-center m-10 w-[85vw] ml-[15vw]'>
       <h1 className="text m-10 mt-30 font-extrabold text-4xl justify-self-center">Total Expense</h1>
@@ -38,55 +53,29 @@ const Total = forwardRef((props, ref) => {
               Yearly </div>
           </div>
           {!year ? (
-            <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl'>
-              <li className='flex justify-between my-2 list'>
-                <div>Week 1</div>
-                <div>345/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>Week 2</div>
-                <div>345/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>Week 3</div>
-                <div>345/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>Week 4</div>
-                <div>345/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>Week 5</div>
-                <div>345/-</div>
-              </li>
-              <div className='list bg-gray-700 h-1 w-[80%] justify-self-center rounded-full mt-3 mb-5'></div>
-              <li className='absolute right-82 list'>7357/-</li>
-            </ul>
+            cards.map((card) => (
+              <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl ' key={card.date}>
+                <li className='flex justify-between my-2 list'>
+                  <div>{card.item}</div>
+                  <div>{card.price}</div>
+                </li>
+              </ul>
+            )).concat(
+              <><div className="list bg-gray-700 h-1 w-[55%] justify-self-center rounded-full mr-75 mt-3 mb-5"></div>
+              <div className='absolute right-82 list' key="total">&{7357}</div></>
+            )
           ) : (
-            <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl'>
-              <li className='flex justify-between my-2 list'>
-                <div>January</div>
-                <div>950/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>Feburary</div>
-                <div>1020/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>March</div>
-                <div>2903/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>April</div>
-                <div>4536/-</div>
-              </li>
-              <li className='flex justify-between my-2 list'>
-                <div>May</div>
-                <div>1254/-</div>
-              </li>
-              <div className='list bg-gray-700 h-1 w-[80%] justify-self-center rounded-full mt-3 mb-5'></div>
-              <li className='absolute right-82 list'>92738/-</li>
-            </ul>
+            cards.map((card) => (
+            <ul className='w-3/5 h-fit my-5 text-2xl font-bold mx-5 rounded-3xl ' key={card.date}>
+              <li className='flex justify-between list'>
+                  <div>{card.item}</div>
+                  <div>{card.price}</div>
+                </li>
+              </ul>
+            )).concat(
+              <><div className="list bg-gray-700 h-1 w-[55%] justify-self-center rounded-full mr-75 mt-3 mb-5"></div>
+              <div className='absolute right-82 list' key="total">7357/-</div></>
+            )
           )}
         </div>
       </div>
