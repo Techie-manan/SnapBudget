@@ -1,12 +1,58 @@
-# React + Vite
+# 📊 SnapBudget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SnapBudget is a user-friendly, lightweight budgeting web app designed to help individuals seamlessly track their income and expenses. Whether you're managing daily expenses, saving for goals, or just want to understand your spending habits better, SnapBudget offers a clean interface and intuitive experience.
 
-Currently, two official plugins are available:
+![SnapBudget Screenshot](https://github.com/Techie-manan/SnapBudget/raw/main/assets/snapbudget-banner.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add, edit, and delete **income and expenses**
+- 📅 View transactions by **date** and **category**
+- 📈 Instant summary of **total balance, income, and expenses**
+- 🔒 Secure data handling (coming soon with user auth)
+- 💾 Offline-first approach (planned)
+- 🎨 Clean and responsive UI with **React + Tailwind CSS**
+
+---
+
+## 🛠 Tech Stack
+
+| Frontend       | Backend (Planned) | Others                 |
+|----------------|------------------|------------------------|
+| React          | Django / Express | Tailwind CSS, Chart.js |
+| Vite           | SQLite / MongoDB | Netlify (deployment)   |
+
+---
+
+
+---
+
+## 🚧 Roadmap
+
+- [x] Add income/expense tracking
+- [x] Display total balance
+- [ ] Filter by date/category
+- [ ] User authentication
+- [ ] Backend integration
+- [ ] Offline data persistence (IndexedDB/PWA)
+
+---
+
+## 🖥️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/Techie-manan/SnapBudget.git
+cd SnapBudget
+npm install
+npm run dev
+
+
